@@ -63,21 +63,6 @@ main {
   top: 0;
   right: 0; }
 
-.layer3 {
-  /* margin: 0 auto 0 20%; */
-  position: absolute;
-  /*top: 50vh;*/
-  bottom: 0;
-  right: 0;
-  width: 25vw;
-  /* min-width: 650px; */
-  background-color: rgba(255, 200, 255, 0.9);
-  /* min-height: 400px; */
-  height: 25vh;
-  /* min-height: 450px; */
-  overflow: hidden;
-  z-index: 2; }
-
 .slider-text h1 {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -95,30 +80,56 @@ main {
   font-size: 1rem;
   line-height: 1.25rem; }
 
-.bullet li {
-  display: inline-block;
-  border-radius: 50%;
-  height: 0.5vw;
-  width: 0.5vw;
-  background-color: white;
-  margin: 0 1vw 0 1vw;
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
-  .bullet li:hover {
-    background-color: #00E0C3;
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5); }
+.layer3 footer {
+  position: absolute;
+  z-index: 2;
+  bottom: 5vh;
+  right: 38vw;
+  background-color: blue; }
+  .layer3 footer button {
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 1vw 0 1vw;
+    height: 4vw;
+    width: 4vw;
+    border: none; }
+.layer3 .cv-div {
+  position: absolute;
+  z-index: 2;
+  top: 5vh;
+  right: 5vw;
+  background-color: transparent; }
+
+.bullet {
+  position: absolute;
+  z-index: 2;
+  bottom: 52vh;
+  right: 18vw;
+  background-color: lightblue; }
+  .bullet li {
+    display: inline-block;
+    border-radius: 50%;
+    height: 0.5vw;
+    width: 0.5vw;
+    background-color: white;
+    margin: 0 1vw 0 1vw;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+    .bullet li:hover {
+      background-color: #00E0C3;
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5); }
 
 .cv {
   height: 8vw;
