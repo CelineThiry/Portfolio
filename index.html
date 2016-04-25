@@ -2,95 +2,89 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<!--I FOUND SOMETHING IMPORTANT : Tag above is what define how the design must reacts to different size of device such as tablet and smartphone  -->
 	<title>Céline Thiry - Portfolio</title>
 	<meta name="description" content="Céline Thiry's portfolio. Céline Thiry is a belgian graphic and fashion designer from Liège, Belgium.">
 	<meta name="keywords" content="Céline Thiry, Graphic Designer, Liège">
-	<meta name="author" content="Hege Refsnes">
+	<meta name="author" content="Céline Thiry">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
 
 </head>
 <body>
 <div id="container">
+<div id="sidebar">
 	<nav>
 		<div>
 			<header><img src="" alt=""><h2>Graphic Designer</h2></header>
-			<section><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium incidunt, quae illo libero ab, eos illum similique est placeat modi ad quam reprehenderit in exercitationem quas praesentium architecto officiis dolore.</p></section>
+			<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium incidunt, quae illo libero ab, eos illum similique est placeat modi ad quam reprehenderit in exercitationem quas praesentium architecto officiis dolore.</p>
+			</section>
 			<footer> 
-			<div class="contact">
-				<h1>Contact</h1>
-				<p>hello@celinethiry.be</p>
-			</div>
-			<ul class="follow">
-				<h1>Follow me</h1>
-				<li><a href=""><img src="img/behance-logo.svg" alt="">Behance</a></li>
-				<li><a href=""><img src="img/linkedin-logo.svg" alt="">Linkedin</a></li>
-				<li><a href=""><img src="img/tumblr-letter-logo.svg" alt="">Tumblr</a></li>
-				<li><a href=""><img src="img/twitter-logo.svg" alt="">Twitter</a></li>
-			</ul>
+				<div class="contact">
+					<h1>Contact</h1>
+					<p>hello@celinethiry.be</p>
+				</div>
+				<ul class="follow">
+					<h1>Follow me</h1>
+					<li><a href=""><img src="img/behance-logo.svg" alt="Behance"></a></li>
+					<li><a href=""><img src="img/linkedin-logo.svg" alt="Linkedin"></a></li>
+					<li><a href=""><img src="img/tumblr-letter-logo.svg" alt="Tumblr"></a></li>
+					<li><a href=""><img src="img/twitter-logo.svg" alt="Twitter"></a></li>
+				</ul>
 			</footer>
 		</div>
 		<img class="wave" src="img/wave.svg" alt="">
 	</nav>
+</div> <!-- END SIDEBAR -->
+	
 	<main>
-		<div>
+		<div class="layer1">
 			<ul class="img-slider">
 				<li><img src="img/sp-lookbook01.jpg" alt=""></li>
 				<li><img src="img/sp-mag-encart.jpg" alt=""></li>
 				<li><img src="img/tfa-brochure.jpg" alt=""></li>
-			</ul>
+			</ul>			
+		</div>
+		<div class="layer2">
 			<ul class="txt-slider">
-				<li>
-					<header>
-						<ol>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ol>
-					</header>
+				<li>					
 					<article>
 						<h1>Titre de l'article</h1>
 						<p>tag, tag, tag</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo voluptas a unde amet, similique reprehenderit veritatis architecto porro fugit repellendus at odit accusantium quos doloremque nemo saepe tempora in facilis.</p>
-					</article>
-					<footer><button class="previous"><</button><button class="next">></button></footer>
+					</article>					
 				</li>
-				<li>
-					<header>
-						<ol>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ol>
-					</header>
+				<li>					
 					<article>
 						<h1></h1>
 						<p></p>
 						<p></p>
-					</article>
-					<footer><button class="previous"></button><button class="next"></button></footer>
+					</article>					
 				</li>
-				<li>
-					<header>
-						<ol>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ol>
-					</header>
+				<li>					
 					<article>
 						<h1></h1>
 						<p></p>
 						<p></p>
-					</article>
-					<footer><button class="previous"></button><button class="next"></button></footer>
+					</article>					
 				</li>
 			</ul>
 		</div>
-		<div>
-		<button class="download-cv">cv</button>
+		<div class="layer3">
+			<footer><button class="previous"><</button><button class="next">></button></footer>
+			<div><button class="download-cv">cv</button></div>
 		</div>
 		
 	</main>
 </div>
+
+
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/slider.js"></script>
 	
 </body>
 </html>
