@@ -120,4 +120,15 @@ main {
     -o-transform: scale(1.5);
     transform: scale(1.5); }
 
+.cv {
+  height: 8vw;
+  width: 8vw;
+  background-color: #FF638F;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
 /*# sourceMappingURL=style.css.map */
