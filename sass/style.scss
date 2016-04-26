@@ -267,6 +267,17 @@ main{
 		        	        transform: scale(1.5);
 		        }
 	}
+	li.active{
+
+			background-color: #00E0C3;
+			border-radius: 100%;
+			-webkit-transform: scale(1.5);
+			   -moz-transform: scale(1.5);
+			    -ms-transform: scale(1.5);
+			     -o-transform: scale(1.5);
+			        transform: scale(1.5);
+
+	}
 }
 
 .cv{

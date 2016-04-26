@@ -103,31 +103,6 @@ $(function() {
 
             slide_index = new_slide_index;
 
-
-
-            if(new_slide_index == 1){
-                    console.log('je suis le 2 actif');
-                    
-                    $('.bullet li').removeClass('active');
-                    $('.bullet li:nth-of-type(2)').addClass('active');
-                }
-            if(new_slide_index == 2){
-                    console.log('je suis le 3 actif');
-                    
-                    $('.bullet li').removeClass('active');
-                    $('.bullet li:nth-of-type(3)').addClass('active');
-                }
-            if(new_slide_index == 3 | new_slide_index == 0){
-                    console.log('je suis le 1 actif');
-                    
-                    $('.bullet li').removeClass('active');
-                    $('.bullet li:nth-of-type(1)').addClass('active');
-                }
-
-
-
-
-
           }
 
         }, 20);
@@ -151,8 +126,6 @@ $(function() {
 
 
     }
-
-
 
 });
 
