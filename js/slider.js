@@ -104,7 +104,7 @@ $(function() {
             slide_index = new_slide_index;
 
 
-
+            // the related bullet gets activated when related slider changes  !
             if(new_slide_index == 1){
                     console.log('je suis le 2 actif');
                     
@@ -124,7 +124,33 @@ $(function() {
                     $('.bullet li:nth-of-type(1)').addClass('active');
                 }
 
+            // On click on a bullet, slider is animated and we get the related slider sliding in front of us !
+            $('.bullet li:nth-of-type(1)').on('click', function(event) {
+                event.preventDefault();
+                $('.bullet li').removeClass('active');
+                ul.css("margin-left", "-100%");
+                ul_text.css("margin-left", "-100%");
+                $(this).addClass('active');
 
+            });
+
+            $('.bullet li:nth-of-type(2)').on('click', function(event) {
+                event.preventDefault();
+                $('.bullet li').removeClass('active');
+                ul.css("margin-left", "-200%");
+                ul_text.css("margin-left", "-200%");
+                $(this).addClass('active');
+
+            });
+
+            $('.bullet li:nth-of-type(3)').on('click', function(event) {
+                event.preventDefault();
+                $('.bullet li').removeClass('active');
+                ul.css("margin-left", "-300%");
+                ul_text.css("margin-left", "-300%");
+                $(this).addClass('active');
+
+            });
 
 
 
@@ -149,7 +175,7 @@ $(function() {
 
         });
 
-
+      
     }
 
 

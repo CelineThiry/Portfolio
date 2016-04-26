@@ -150,11 +150,11 @@ main {
     background-color: white;
     margin: 0 1vw 0 1vw;
     cursor: pointer;
-    -webkit-transition: all .25s ease-in;
-    -moz-transition: all .25s ease-in;
-    -ms-transition: all .25s ease-in;
-    -o-transition: all .25s ease-in;
-    transition: all .25s ease-in;
+    -webkit-transition: transform .25s ease-in, background-color .25s ease-in;
+    -moz-transition: transform .25s ease-in, background-color .25s ease-in;
+    -ms-transition: transform .25s ease-in, background-color .25s ease-in;
+    -o-transition: transform .25s ease-in, background-color .25s ease-in;
+    transition: transform .25s ease-in, background-color .25s ease-in;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
