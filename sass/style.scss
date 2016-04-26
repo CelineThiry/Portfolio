@@ -40,9 +40,53 @@ $primary-color: blue;
 		}
 
 		header{
-			font-family: $open;
-			font-weight: 700;
+			img{
+				width: 33.3%;
+				display: inline-block;
+				text-align: left;
+				
+			}
+			h1{
+				font-family: $crimson;
+				font-weight: 700;
+				font-style: italic;
+				font-size: 2.5rem;
+				margin-bottom: 1vh;
+				margin-top: 3vh;
+				// line-height: 3rem;
+				// margin-left: 4vw;
+			}
+			h2{
+				font-family: $open;
+				font-weight: 700;
+				font-weight: 300;
+				text-transform: uppercase;
+				font-size: 1rem;
+			}
+			
 		}
+
+		// header{
+		// 	img{
+		// 		width: 3vw;
+		// 		float: left;
+		// 	}
+		// 	h1{
+		// 		font-family: $crimson;
+		// 		font-weight: 700;
+		// 		font-style: italic;
+		// 		font-size: 2rem;
+		// 		/* margin-bottom: 4vh; */
+		// 		line-height: 3rem;
+		// 		margin-left: 4vw;
+		// 	}
+		// 	h2{
+		// 		font-family: $open;
+		// 		font-weight: 700;
+		// 		clear: both;
+		// 	}
+			
+		// }
 
 		section{
 			p{
@@ -74,11 +118,11 @@ $primary-color: blue;
 			opacity: 1;
 			&:hover{
 				opacity: 0.7;
-				-webkit-transition: opacity .25s ease;
-				   -moz-transition: opacity .25s ease;
-				    -ms-transition: opacity .25s ease;
-				     -o-transition: opacity .25s ease;
-				        transition: opacity .25s ease;
+				-webkit-transition: opacity .25s ease-in;
+				   -moz-transition: opacity .25s ease-in;
+				    -ms-transition: opacity .25s ease-in;
+				     -o-transition: opacity .25s ease-in;
+				        transition: opacity .25s ease-in;
 			}
 		}
 
@@ -120,6 +164,7 @@ main{
 		font-weight: 700;
 		font-size: 2rem;
 		margin-bottom: 2vh;
+		color: #FF638F;
 	}
 
 	.tags{
@@ -132,7 +177,7 @@ main{
 		font-family: $crimson;
 		font-style: italic;
 		font-weight: 400;
-		font-size: 1rem;
+		font-size: 1.25rem;
 		line-height: 1.25rem;
 	}
 }
@@ -155,24 +200,24 @@ main{
   	background-color: transparent;
   	button{
   		border-radius: 4vw;
-  		background-color: rgb(242,242,242);
+  		background-color: #BBFFF4;
   		margin: 0 0.5vw 0 0.5vw;
   		height: 4vw;
   		width: 4vw;
   		border: none;
-  		color: #00E0C3;
+  		color: white;
   		font-size: 2rem;
-  		font-weight: 700;
+  		font-weight: 300;
   		font-family: $open;
   		cursor: pointer;
   		opacity: 1;
   		&:hover{
   			opacity: 0.7;
-  			-webkit-transition: opacity .25s ease;
-  			   -moz-transition: opacity .25s ease;
-  			    -ms-transition: opacity .25s ease;
-  			     -o-transition: opacity .25s ease;
-  			        transition: opacity .25s ease;
+  			-webkit-transition: opacity .25s ease-in;
+  			   -moz-transition: opacity .25s ease-in;
+  			    -ms-transition: opacity .25s ease-in;
+  			     -o-transition: opacity .25s ease-in;
+  			        transition: opacity .25s ease-in;
   		}
    	}
   }
@@ -180,8 +225,8 @@ main{
   .cv-div{
   	position: absolute;
   	z-index: 2;
-  	top: 5vh;
-  	right: 5vw;
+  	top: 4.5vw;
+  	right: 4.5vw;
   	background-color: transparent;
 
   }
@@ -202,11 +247,11 @@ main{
 		background-color: white;
 		margin: 0 1vw 0 1vw;
 		cursor: pointer;
-		-webkit-transition: all .25s ease;
-		   -moz-transition: all .25s ease;
-		    -ms-transition: all .25s ease;
-		     -o-transition: all .25s ease;
-		        transition: all .25s ease;
+		-webkit-transition: all .25s ease-in;
+		   -moz-transition: all .25s ease-in;
+		    -ms-transition: all .25s ease-in;
+		     -o-transition: all .25s ease-in;
+		        transition: all .25s ease-in;
 		-webkit-transform: scale(1);
 		   -moz-transform: scale(1);
 		    -ms-transform: scale(1);
@@ -225,24 +270,34 @@ main{
 }
 
 .cv{
-	height: 8vw;
-	width: 8vw;
+	height: 5.5vw;
+	width: 5.5vw;
 	background-color: #FF638F;
 	border-radius: 50%;
 	border: none;
 	color: white;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-family: $open;
 	font-weight: 300;
 	cursor: pointer;
 	opacity: 1;
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
 	&:hover{
 		opacity: 0.7;
-		-webkit-transition: opacity .25s ease;
-		   -moz-transition: opacity .25s ease;
-		    -ms-transition: opacity .25s ease;
-		     -o-transition: opacity .25s ease;
-		        transition: opacity .25s ease;
+		-webkit-transform: scale(1.2);
+		   -moz-transform: scale(1.2);
+		    -ms-transform: scale(1.2);
+		     -o-transform: scale(1.2);
+		        transform: scale(1.2);
+		-webkit-transition: transform .25s ease-in;
+		   -moz-transition: transform .25s ease-in;
+		    -ms-transition: transform .25s ease-in;
+		     -o-transition: transform .25s ease-in;
+		        transition: transform .25s ease-in;
 	}
 }
 

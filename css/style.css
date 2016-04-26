@@ -26,9 +26,23 @@
     color: white; }
     #sidebar .content header, #sidebar .content section, #sidebar .content .contact, #sidebar .content .follow {
       padding-bottom: 5vh; }
-    #sidebar .content header {
+    #sidebar .content header img {
+      width: 33.3%;
+      display: inline-block;
+      text-align: left; }
+    #sidebar .content header h1 {
+      font-family: "Crimson Text", serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 2.5rem;
+      margin-bottom: 1vh;
+      margin-top: 3vh; }
+    #sidebar .content header h2 {
       font-family: "Open Sans", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 1rem; }
     #sidebar .content section p {
       font-family: "Open Sans", sans-serif;
       font-weight: 400; }
@@ -46,11 +60,11 @@
     opacity: 1; }
     #sidebar .follow li:hover {
       opacity: 0.7;
-      -webkit-transition: opacity .25s ease;
-      -moz-transition: opacity .25s ease;
-      -ms-transition: opacity .25s ease;
-      -o-transition: opacity .25s ease;
-      transition: opacity .25s ease; }
+      -webkit-transition: opacity .25s ease-in;
+      -moz-transition: opacity .25s ease-in;
+      -ms-transition: opacity .25s ease-in;
+      -o-transition: opacity .25s ease-in;
+      transition: opacity .25s ease-in; }
   #sidebar .follow img {
     height: 2vw; }
   #sidebar .wave {
@@ -76,7 +90,8 @@ main {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 2vh; }
+  margin-bottom: 2vh;
+  color: #FF638F; }
 .slider-text .tags {
   font-size: 0.8rem;
   font-family: "Open Sans", sans-serif;
@@ -85,7 +100,7 @@ main {
   font-family: "Crimson Text", serif;
   font-style: italic;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.25rem; }
 
 .layer3 footer {
@@ -96,29 +111,29 @@ main {
   background-color: transparent; }
   .layer3 footer button {
     border-radius: 4vw;
-    background-color: #f2f2f2;
+    background-color: #BBFFF4;
     margin: 0 0.5vw 0 0.5vw;
     height: 4vw;
     width: 4vw;
     border: none;
-    color: #00E0C3;
+    color: white;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 300;
     font-family: "Open Sans", sans-serif;
     cursor: pointer;
     opacity: 1; }
     .layer3 footer button:hover {
       opacity: 0.7;
-      -webkit-transition: opacity .25s ease;
-      -moz-transition: opacity .25s ease;
-      -ms-transition: opacity .25s ease;
-      -o-transition: opacity .25s ease;
-      transition: opacity .25s ease; }
+      -webkit-transition: opacity .25s ease-in;
+      -moz-transition: opacity .25s ease-in;
+      -ms-transition: opacity .25s ease-in;
+      -o-transition: opacity .25s ease-in;
+      transition: opacity .25s ease-in; }
 .layer3 .cv-div {
   position: absolute;
   z-index: 2;
-  top: 5vh;
-  right: 5vw;
+  top: 4.5vw;
+  right: 4.5vw;
   background-color: transparent; }
 
 .bullet {
@@ -135,11 +150,11 @@ main {
     background-color: white;
     margin: 0 1vw 0 1vw;
     cursor: pointer;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
+    -webkit-transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in;
+    -ms-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    transition: all .25s ease-in;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -155,23 +170,33 @@ main {
       transform: scale(1.5); }
 
 .cv {
-  height: 8vw;
-  width: 8vw;
+  height: 5.5vw;
+  width: 5.5vw;
   background-color: #FF638F;
   border-radius: 50%;
   border: none;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   cursor: pointer;
-  opacity: 1; }
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
   .cv:hover {
     opacity: 0.7;
-    -webkit-transition: opacity .25s ease;
-    -moz-transition: opacity .25s ease;
-    -ms-transition: opacity .25s ease;
-    -o-transition: opacity .25s ease;
-    transition: opacity .25s ease; }
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: transform .25s ease-in;
+    -moz-transition: transform .25s ease-in;
+    -ms-transition: transform .25s ease-in;
+    -o-transition: transform .25s ease-in;
+    transition: transform .25s ease-in; }
 
 /*# sourceMappingURL=style.css.map */
