@@ -55,18 +55,20 @@
     #sidebar .content footer p {
       font-family: "Open Sans", sans-serif;
       font-weight: 400; }
-  #sidebar .follow li {
-    display: inline-block;
-    opacity: 1; }
-    #sidebar .follow li:hover {
-      opacity: 0.7;
-      -webkit-transition: opacity .25s ease-in;
-      -moz-transition: opacity .25s ease-in;
-      -ms-transition: opacity .25s ease-in;
-      -o-transition: opacity .25s ease-in;
-      transition: opacity .25s ease-in; }
-  #sidebar .follow img {
-    height: 2vw; }
+  #sidebar .follow {
+    padding-top: 0.5vw; }
+    #sidebar .follow li {
+      display: inline-block;
+      opacity: 1; }
+      #sidebar .follow li:hover {
+        opacity: 0.7;
+        -webkit-transition: opacity .25s ease-in;
+        -moz-transition: opacity .25s ease-in;
+        -ms-transition: opacity .25s ease-in;
+        -o-transition: opacity .25s ease-in;
+        transition: opacity .25s ease-in; }
+    #sidebar .follow img {
+      height: 2vw; }
   #sidebar .wave {
     position: absolute;
     background: rgba(200, 255, 255, 0) url("../img/wave.svg") 0 0 repeat-y;
@@ -102,6 +104,28 @@ main {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.25rem; }
+
+.more {
+  text-decoration: none;
+  color: black;
+  display: block;
+  opacity: 1; }
+  .more img {
+    width: 2vw;
+    display: inline-block;
+    vertical-align: middle; }
+  .more p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif; }
+  .more:hover {
+    opacity: 0.7;
+    -webkit-transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -ms-transition: opacity .25s ease-in;
+    -o-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in; }
 
 .layer3 footer {
   position: absolute;

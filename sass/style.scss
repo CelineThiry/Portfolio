@@ -39,6 +39,8 @@ $primary-color: blue;
 			padding-bottom: 5vh;
 		}
 
+
+
 		header{
 			img{
 				width: 33.3%;
@@ -113,6 +115,10 @@ $primary-color: blue;
 
 	.follow{
 
+		
+		padding-top: 0.5vw;
+		
+
 		li{
 			display: inline-block;
 			opacity: 1;
@@ -180,6 +186,37 @@ main{
 		font-size: 1.25rem;
 		line-height: 1.25rem;
 	}
+}
+
+.more{
+	text-decoration: none;
+	color: black;
+	display: block;
+	opacity: 1;
+	img{
+		width: 2vw;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	p{
+			
+		display: inline-block;
+		vertical-align: middle;	
+		font-size: 0.8rem;
+		font-family: $open;
+		
+	}
+	&:hover{
+		opacity: 0.7;
+  			-webkit-transition: opacity .25s ease-in;
+  			   -moz-transition: opacity .25s ease-in;
+  			    -ms-transition: opacity .25s ease-in;
+  			     -o-transition: opacity .25s ease-in;
+  			        transition: opacity .25s ease-in;
+	}
+		
+	
 }
 
 .layer3 {
