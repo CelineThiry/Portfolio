@@ -153,6 +153,11 @@
 		z-index: 1;
 		li{
 			margin: 0 3vw 0 3vw;
+			border: 1px solid white;
+		}
+
+		li.active{
+			background-color: white;
 		}
 	}
 

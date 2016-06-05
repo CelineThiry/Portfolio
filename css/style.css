@@ -19,7 +19,9 @@
   top: 4.5vw;
   cursor: pointer;
   text-align: center;
-  line-height: 60px; }
+  line-height: 60px;
+  font-weight: normal;
+  font-style: none; }
 
 #sidebar {
   width: 25vw;
@@ -410,6 +412,9 @@ main {
     right: 38vw;
     z-index: 1; }
     div.bullet li {
-      margin: 0 3vw 0 3vw; } }
+      margin: 0 3vw 0 3vw;
+      border: 1px solid white; }
+    div.bullet li.active {
+      background-color: white; } }
 
 /*# sourceMappingURL=style.css.map */
