@@ -75,9 +75,36 @@ $(function() {
         slide(slide_index + 1);
     });
 
-
+    $('.bullet li:nth-of-type(1)').addClass('active');
 
     slide = function(new_slide_index) {
+
+
+
+        // the related bullet gets activated when related slider changes  !
+        if(new_slide_index == 1){
+                console.log('je suis le 2 actif');
+                
+                $('.bullet li').removeClass('active');
+                $('.bullet li:nth-of-type(2)').addClass('active');
+            }
+        if(new_slide_index == 2 | new_slide_index == 0){
+                console.log('je suis le 3 actif');
+                
+                $('.bullet li').removeClass('active');
+                $('.bullet li:nth-of-type(3)').addClass('active');
+            }
+        if(new_slide_index == 3 | new_slide_index == -1){
+                console.log('je suis le 1 actif');
+                
+                $('.bullet li').removeClass('active');
+                $('.bullet li:nth-of-type(1)').addClass('active');
+            }
+
+        if($('.bullet li:nth-of-type(1)').hasClass('active')){
+            new_slide_index == 0;
+        }
+
         console.log("SLIDESWITCH: " + new_slide_index);
         var margin_left_pc = (new_slide_index * (-100) - 100) + "%";
 
@@ -104,25 +131,25 @@ $(function() {
             slide_index = new_slide_index;
 
 
-            // the related bullet gets activated when related slider changes  !
-            if(new_slide_index == 1){
-                    console.log('je suis le 2 actif');
+            // // the related bullet gets activated when related slider changes  !
+            // if(new_slide_index == 1){
+            //         console.log('je suis le 2 actif');
                     
-                    $('.bullet li').removeClass('active');
-                    $('.bullet li:nth-of-type(2)').addClass('active');
-                }
-            if(new_slide_index == 2){
-                    console.log('je suis le 3 actif');
+            //         $('.bullet li').removeClass('active');
+            //         $('.bullet li:nth-of-type(2)').addClass('active');
+            //     }
+            // if(new_slide_index == 2){
+            //         console.log('je suis le 3 actif');
                     
-                    $('.bullet li').removeClass('active');
-                    $('.bullet li:nth-of-type(3)').addClass('active');
-                }
-            if(new_slide_index == 3 | new_slide_index == 0){
-                    console.log('je suis le 1 actif');
+            //         $('.bullet li').removeClass('active');
+            //         $('.bullet li:nth-of-type(3)').addClass('active');
+            //     }
+            // if(new_slide_index == 3 | new_slide_index == 0){
+            //         console.log('je suis le 1 actif');
                     
-                    $('.bullet li').removeClass('active');
-                    $('.bullet li:nth-of-type(1)').addClass('active');
-                }
+            //         $('.bullet li').removeClass('active');
+            //         $('.bullet li:nth-of-type(1)').addClass('active');
+            //     }
 
             // On click on a bullet, slider is animated and we get the related slider sliding in front of us !
             $('.bullet li:nth-of-type(1)').on('click', function(event) {
