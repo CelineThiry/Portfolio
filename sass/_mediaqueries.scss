@@ -46,18 +46,28 @@
 	}
 
 	div.layer1{
-		width: 100vw;
-		min-width: 250vw;
+		width: 100vw;		
 		overflow: hidden;
+		bottom: unset;
+		height: unset;
+		min-width: unset;
 	}
+	
+	div.slider-img {
+	    width: 100%;
+	    overflow: hidden;
+	    height: 50vh;
+	    position: relative;
+	}
+
 
 	div.layer2{
 		right: 0;
 		width: 100vw;
-		padding: 85px 4.5vw 4.5vw 4.5vw;
+		padding: 4.5vw;
 		border-radius: 0;
 		height: 100vh;
-		bottom: -87.5vh;
+		bottom: -50vh;
 		z-index: 0;
 		-webkit-transition: bottom .30s ease-in-out;
 		   -moz-transition: bottom .30s ease-in-out;
@@ -75,8 +85,27 @@
 		        transition: bottom 1s ease-in-out;
 	}
 
+	.slider-text{
+		h1{
+			font-size: 1.75rem;
+		}
+
+		.tags{
+			font-size: 0.7rem;
+		}
+
+		p{
+			font-size: 1rem;
+		}
+		
+	}
+
+	.more p{
+		font-size: 0.7rem;
+	}
+
 	.animated-tip{
-		display: block;
+		display: none;
 		// background-color: blue;
 		height: 30px;
 		width: 90%;
@@ -119,7 +148,7 @@
 	}
 
 	div.bullet{
-		bottom: 18vh;
+		bottom: 54vh;
 		right: 38vw;
 		z-index: 1;
 		li{
