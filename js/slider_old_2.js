@@ -2,6 +2,8 @@ var slide = null;
 
 $(function() {
 
+    console.log('slide_width_pc');
+
     var ul = $(".slider-img ul");
     var ul_text = $(".slider-text ul");
 
@@ -9,8 +11,6 @@ $(function() {
     var slide_count = ul.children().length;
     var slide_width_pc = 100.0 / slide_count;
     var slide_index = 0;
-
-
 
     // Var to clone the first and the last li
     var first_slide = ul.find("li:first-child");
@@ -31,17 +31,9 @@ $(function() {
             ');"></a></li>'
 
     }
-    bullets_html += '</ul>';   
-    
+    bullets_html += '</ul>';
 
     jQuery('.bullet').html(bullets_html);
-
-    //Set bullet to intial state
-    $('img').load(function() {
-        console.log('les images sont chargées !')
-        $('.bullet li').removeClass('active');
-        $('.bullet li:first').addClass('active');
-    });
 
     // Clone the first slide and add as last li element
     first_slide.clone().appendTo(ul);
@@ -63,8 +55,8 @@ $(function() {
     });
 
     ul_text.find("li").each(function(indx) {
-        var left_percent = (slide_width_pc * indx) + "%"; 
-        // indx c'est le nombre de tour que each va faire, 3 li + 2 li clone = 5 >> indx=5 
+        var left_percent = (slide_width_pc * indx) + "%";
+        console.log(indx);
         $(this).css({
             "left": left_percent
         });
@@ -79,37 +71,33 @@ $(function() {
         slide(slide_index - 1);
     });
 
-    //setInterval(slide(), 1000);
-
     // Listen for click of next button
     $(".next").click(function() {
         console.log("next button clicked");
         slide(slide_index + 1);
     });
 
-
-
     // Add active on class on the first slide bullet when doc is ready
     $('.bullet li:nth-of-type(1)').addClass('active');
 
     slide = function(new_slide_index) {
 
-        console.log(slide_index);
+
 
         // the related bullet gets activated when related slider changes  !
-        if (slide_index == 1) {
+        if (new_slide_index == 1) {
             console.log('je suis le 2 actif');
 
             $('.bullet li').removeClass('active');
             $('.bullet li:nth-of-type(2)').addClass('active');
         }
-        if (slide_index == 2 | slide_index == 0) {
+        if (new_slide_index == 2 | new_slide_index == 0) {
             console.log('je suis le 3 actif');
 
             $('.bullet li').removeClass('active');
             $('.bullet li:nth-of-type(3)').addClass('active');
         }
-        if (slide_index == 3 | slide_index == -1) {
+        if (new_slide_index == 3 | new_slide_index == -1) {
             console.log('je suis le 1 actif');
 
             $('.bullet li').removeClass('active');
@@ -117,7 +105,7 @@ $(function() {
         }
 
         if ($('.bullet li:nth-of-type(1)').hasClass('active')) {
-            slide_index == 0;
+            new_slide_index == 0;
         }
 
         console.log("SLIDESWITCH: " + new_slide_index);
@@ -148,6 +136,26 @@ $(function() {
 
                 slide_index = new_slide_index;
 
+
+                // // the related bullet gets activated when related slider changes  !
+                // if(new_slide_index == 1){
+                //         console.log('je suis le 2 actif');
+
+                //         $('.bullet li').removeClass('active');
+                //         $('.bullet li:nth-of-type(2)').addClass('active');
+                //     }
+                // if(new_slide_index == 2){
+                //         console.log('je suis le 3 actif');
+
+                //         $('.bullet li').removeClass('active');
+                //         $('.bullet li:nth-of-type(3)').addClass('active');
+                //     }
+                // if(new_slide_index == 3 | new_slide_index == 0){
+                //         console.log('je suis le 1 actif');
+
+                //         $('.bullet li').removeClass('active');
+                //         $('.bullet li:nth-of-type(1)').addClass('active');
+                //     }
 
                 // On click on a bullet, slider is animated and we get the related slider sliding in front of us !
                 $('.bullet li:nth-of-type(1)').on('click',
@@ -210,11 +218,13 @@ $(function() {
         });
 
 
-    }; //end function slide
+    };
 
-    //setInterval(slide(slide_index + 1), 1000);
-    //setInterval(anim_post_process_interval, 1000);
-    
+    var autoSliding = function(){
+        slide(slide_index + 1);
+    };
+
+    autoSliding(1000);
 
 
 });

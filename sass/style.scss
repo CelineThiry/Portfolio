@@ -35,7 +35,7 @@ $rose: #FF638F;
 }
 
 #sidebar{
-	width: 25vw;
+	width: 350px;
 	min-width: 275px;
 	height: 100vh;
 	background-color: pink;
@@ -361,6 +361,10 @@ main{
 }
 
 .cv{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+
 	height: 5.5vw;
 	width: 5.5vw;
 	min-width: 60px;
@@ -370,6 +374,7 @@ main{
 	border: none;
 	color: white;
 	font-size: 2rem;
+	line-height: 5.5vw;
 	font-family: $open;
 	font-weight: 300;
 	cursor: pointer;

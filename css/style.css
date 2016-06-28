@@ -24,7 +24,7 @@
   font-style: none; }
 
 #sidebar {
-  width: 25vw;
+  width: 350px;
   min-width: 275px;
   height: 100vh;
   background-color: pink;
@@ -241,6 +241,9 @@ main {
     transform: scale(1.5); }
 
 .cv {
+  display: block;
+  text-align: center;
+  text-decoration: none;
   height: 5.5vw;
   width: 5.5vw;
   min-width: 60px;
@@ -250,6 +253,7 @@ main {
   border: none;
   color: white;
   font-size: 2rem;
+  line-height: 5.5vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   cursor: pointer;
@@ -280,8 +284,12 @@ main {
 * MEDIA QUERY
 *
 */
+@media (min-width: 750px) and (max-width: 1000px) {
+  div#sidebar {
+    width: 350px; } }
 @media (max-width: 1000px) {
   #sidebar {
+    width: 250px;
     left: -100vw;
     -webkit-transition: left .30s ease-in-out;
     -moz-transition: left .30s ease-in-out;
@@ -324,6 +332,8 @@ main {
     overflow: hidden;
     height: 50vh;
     position: relative; }
+    div.slider-img li img {
+      width: 150%; }
 
   div.layer2 {
     right: 0;
@@ -333,6 +343,7 @@ main {
     height: 100vh;
     bottom: -50vh;
     z-index: 0;
+    background-color: white;
     -webkit-transition: bottom .30s ease-in-out;
     -moz-transition: bottom .30s ease-in-out;
     -ms-transition: bottom .30s ease-in-out;

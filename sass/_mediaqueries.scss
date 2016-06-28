@@ -6,8 +6,16 @@
 // 	}
 // }
 
+@media (min-width: 750px) and (max-width: 1000px){
+  div#sidebar{
+  	width: 350px;  	
+  }
+
+}
+
 @media (max-width: 1000px) {
   #sidebar{
+  	width: 250px;
   	left: -100vw;
   	-webkit-transition: left .30s ease-in-out;
   	   -moz-transition: left .30s ease-in-out;
@@ -58,6 +66,12 @@
 	    overflow: hidden;
 	    height: 50vh;
 	    position: relative;
+
+	    li{
+	    	img{
+	    		width: 150%;
+	    	}
+	    }
 	}
 
 
@@ -69,6 +83,7 @@
 		height: 100vh;
 		bottom: -50vh;
 		z-index: 0;
+		background-color: rgba(255,255,255,1);
 		-webkit-transition: bottom .30s ease-in-out;
 		   -moz-transition: bottom .30s ease-in-out;
 		    -ms-transition: bottom .30s ease-in-out;
