@@ -36,7 +36,7 @@ $rose: #FF638F;
 
 #sidebar{
 	width: 350px;
-	min-width: 275px;
+	// min-width: 275px;
 	height: 100vh;
 	background-color: pink;
 	position: absolute;
@@ -52,7 +52,7 @@ $rose: #FF638F;
 	}
 
 	.content{
-		padding: 4.25vw 4.25vw 4.25vw 4.25vw;
+		padding: 50px 50px 50px 50px;
 		line-height: 1.25rem;
 		font-size: 1rem;
 		color: white;
@@ -364,19 +364,19 @@ main{
 	display: block;
 	text-align: center;
 	text-decoration: none;
-
+	min-width: 60px;
 	height: 5.5vw;
 	width: 5.5vw;
-	min-width: 60px;
-	min-height: 60px;
-	background-color: $rose;
-	border-radius: 50%;
-	border: none;
-	color: white;
-	font-size: 2rem;
-	line-height: 5.5vw;
-	font-family: $open;
-	font-weight: 300;
+	// min-width: 60px;
+	// min-height: 60px;
+	// background-color: $rose;
+	// border-radius: 50%;
+	// border: none;
+	// color: white;
+	// font-size: 2rem;
+	// line-height: 5.5vw;
+	// font-family: $open;
+	// font-weight: 300;
 	cursor: pointer;
 	// opacity: 1;
 	-webkit-transform: scale(1);
@@ -389,6 +389,9 @@ main{
 	    -ms-transition: transform .15s ease-out;
 	     -o-transition: transform .15s ease-out;
 	        transition: transform .15s ease-out;
+	img{
+		width: 100%;
+	}
 	&:hover{
 		// opacity: 0.7;
 		-webkit-transform: scale(1.2);

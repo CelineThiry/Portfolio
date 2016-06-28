@@ -8,8 +8,27 @@
 
 @media (min-width: 750px) and (max-width: 1000px){
   div#sidebar{
-  	width: 350px;  	
+  	width: 350px;  
+  	.content{
+  		padding: 95px 6vw 6vw 6vw;
+  	}	
   }
+	
+		.layer1{
+				div.slider-img{
+					height: 75vh;
+				}
+
+				
+			}
+	main div.layer2{
+					bottom: -75vh;
+				}
+
+	.layer3 div.bullet{
+		bottom: 28vh;
+	}
+  
 
 }
 
@@ -169,10 +188,14 @@
 		li{
 			margin: 0 3vw 0 3vw;
 			border: 1px solid white;
+			&:hover{
+				background-color: white;
+			}
 		}
 
 		li.active{
 			background-color: white;
+			border: 1px solid white;
 		}
 	}
 
