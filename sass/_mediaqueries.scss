@@ -1,10 +1,18 @@
-// @media (max-width: 500px) {
-// 	main div.layer1{		
-// 		min-width: 700px;
-// 		width: 100vw;		
-// 		overflow: hidden;		
-// 	}
-// }
+@media (max-width: 400px) {
+	.layer1 div.slider-img li img {
+	    width: 130%;
+	}
+}
+
+@media (max-width: 750px) {
+	.layer3 div.bullet{
+		right: 33vw;
+		li{
+			height: 18px;
+			width: 18px;
+		}
+	}
+}
 
 @media (min-width: 750px) and (max-width: 1000px){
   div#sidebar{
@@ -183,7 +191,7 @@
 
 	div.bullet{
 		bottom: 54vh;
-		right: 38vw;
+		right: 37vw;
 		z-index: 1;
 		li{
 			margin: 0 3vw 0 3vw;
@@ -200,4 +208,45 @@
 	}
 
 
+}
+
+@media (min-width: 1400px) {
+
+	#sidebar{
+  	width: 18vw; 	
+  	}				
+
+	main {
+		width: 82vw;
+		.layer1{
+			width: 82vw;
+		}
+	}  	
+}
+
+@media (min-width: 2200px) {
+
+	#sidebar{
+	  	width: 15vw; 
+	  	.wave{
+	  		right: -1.25vw;
+	  		width: 1.25vw;
+	  	}	
+  	}				
+
+	main {
+		width: 85vw;
+		.layer1{
+			width: 85vw;
+		}
+	}  
+
+	.bullet{
+		li{
+			height: 18px;
+			width: 18px;
+		}
+	}
+
+		
 }
