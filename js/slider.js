@@ -14,9 +14,10 @@ $(function() {
 
     var slide_count = ul.children().length;
     
+    
     console.log("slide_count: " + slide_count);
     
-    var slide_width_pc = 100 / slide_count;
+    var slide_width_pc = 33.33;
     var slide_index = 0;
     var anim_state = ANIM_STOPPED;
 
@@ -51,14 +52,14 @@ $(function() {
     ul.find("li").each(function(indx) {
         var left_percent = (slide_width_pc * indx) + "%";
         $(this).css({"left": left_percent});
-        $(this).css({width: (100 / slide_count) + "%"});
+        $(this).css({width: slide_width_pc + "%"});
     });
 
     ul_text.find("li").each(function(indx) {
         var left_percent = (slide_width_pc * indx) + "%"; 
         // indx c'est le nombre de tour que each va faire, 3 li + 2 li clone = 5 >> indx=5 
         $(this).css({"left": left_percent});
-        $(this).css({width: (100 / slide_count) + "%"});
+        $(this).css({width: slide_width_pc + "%"});
     });
 
     // Listen for click of prev button

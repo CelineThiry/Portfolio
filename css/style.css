@@ -199,8 +199,8 @@ main {
 .bullet {
   position: absolute;
   z-index: 2;
-  bottom: 53vh;
-  right: 18vw;
+  bottom: 47vh;
+  right: 14vw;
   background-color: transparent; }
   .bullet li {
     display: inline-block;
